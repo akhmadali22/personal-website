@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Reset some basic styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,94 +6,115 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #001f3d, #005b7f);
+  color: #fff;
   line-height: 1.6;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
-  background-color: #001f3d; /* Navy Blue */
-  color: #fff;
+  padding: 100px 20px;
   text-align: center;
-  padding: 2rem 0;
+  background: linear-gradient(135deg, #001f3d, #003459);
+  border-bottom: 1px solid #005b7f;
 }
 
 header h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header p {
   font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 button {
   background-color: #fff;
   color: #001f3d;
+  padding: 10px 30px;
+  font-size: 1.1rem;
   border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
+  border-radius: 50px;
   cursor: pointer;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: #005b7f; /* Lighter Navy */
+  background-color: #005b7f;
+  color: #fff;
+  transform: translateY(-3px);
 }
 
-/* Main content styles */
+button:focus {
+  outline: none;
+}
+
+/* Main Content Styles */
 main {
-  padding: 3rem 0;
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .container {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #001f3d;
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 ul li {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
 ul li a {
   color: #001f3d;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 ul li a:hover {
-  text-decoration: underline;
+  color: #005b7f;
 }
 
-/* Footer styles */
+/* Footer Styles */
 footer {
-  background-color: #001f3d;
-  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 1rem 0;
+  background-color: #001f3d;
+}
+
+footer p {
+  font-size: 1rem;
 }
 
 footer a {
@@ -103,4 +124,32 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 25px;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
 }

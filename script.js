@@ -1,4 +1,4 @@
-// Function to handle the "Contact Me" button click
+// Handling the "Contact Me" button interaction
 document.getElementById('contactButton').addEventListener('click', function() {
-  alert('You can contact me at akhmadali22@gmail.com');
+  window.location.href = "mailto:akhmadali22@gmail.com"; // Open email client
 });
